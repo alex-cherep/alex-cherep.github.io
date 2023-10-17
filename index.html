@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konstruct</title>
+  <link rel="icon" href="favicon.svg" type="image/svg">
+  <link rel="stylesheet" href="./css/styles.min.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__navbar">
+        <svg class="header__logo logo logo--md">
+          <use href="svg/sprite.svg#logo"></use>
+        </svg>
+
+        <nav class="header__nav nav" id="nav-menu" aria-expanded="false">
+          <div class="nav__block">
+            <ul class="nav__list list-reset">
+              <li class="nav__list-item">
+                <a href="#" class="nav__list-link nav__list-link--active">Home</a>
+              </li>
+  
+              <li class="nav__list-item">
+                <a href="#" class="nav__list-link">About</a>
+              </li>
+  
+              <li class="nav__list-item">
+                <a href="#" class="nav__list-link">Packages</a>
+              </li>
+  
+              <li class="nav__list-item">
+                <a href="#" class="nav__list-link">FAQ</a>
+              </li>
+  
+              <li class="nav__list-item">
+                <a href="#" class="nav__list-link">Community</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav__buttons">
+            <a href="#" class="btn btn--sm btn--outlined btn--rounded-sm">Login</a>
+            <button class="btn btn--sm btn--primary btn--rounded-sm">Sign Up</button>
+          </div>
+        </nav>
+
+        <button class="hamburger-btn" aria-label="Show navigation menu" aria-controls="nav-menu">
+          <span class="hamburger-btn__line" aria-hidden="true"></span>
+          <span class="hamburger-btn__line" aria-hidden="true"></span>
+          <span class="hamburger-btn__line" aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <div class="header__main">
+        <div class="header__content content">
+          <h1 class="content__heading heading heading--1">Discover your favorite place with us</h1>
+
+          <p class="content__text text text--md">Your journey begins here with our curated travel experiences. Discover new horizons, create lasting memories, and explore the world with our expertly crafted itineraries.</p>
+
+          <form action="#" class="form-booking form-booking--grid">
+            <div class="form-booking__item">
+              <label class="form-booking__label-icon" for="location">
+                <svg width="24" height="24" class="form-booking__icon icon icon--md" aria-hidden="true">
+                  <use href="svg/sprite.svg#map"></use>
+                </svg>
+              </label>
+
+                <label class="form-booking__label-title" for="location">
+                  <span class="form-booking__title">Locations</span>
+                </label>
+
+              <input class="form-booking__input input" type="text" name="location" id="location" placeholder="e.g Bali, Indonesia" required>
+            </div>
+
+            <div class="form-booking__item">
+              <label class="form-booking__label-icon" for="calendar">
+                <svg width="24" height="24" class="form-booking__icon icon icon--md" aria-hidden="true">
+                  <use href="svg/sprite.svg#calendar"></use>
+                </svg>
+              </label>
+
+              <label class="form-booking__label-title" for="calendar">
+                <span class="form-booking__title">Date and time</span>
+              </label>
+
+              <input class="form-booking__input input" type="date" name="date" id="calendar" required>
+            </div>
+
+            <button class="form-booking__btn btn btn--icon btn--accent btn--rounded-md" aria-label="Search">
+              <svg class="btn__icon" width="24" height="24" aria-hidden="true" focusable="false">
+                <use href="svg/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+        <div class="header__visual">
+          <div class="header__card card-tour card-tour--horizontal card-tour--md">
+            <img src="img/hotels/coco-de-heaven.jpg" alt="Sun loungers near the pool" class="card-tour__img card-tour__img--rounded">
+
+            <h3 class="card-tour__title heading">
+               <a class="card-tour__title-link" href="https://www.instagram.com/cocodeheaven/">Coco De Heaven</a>
+            </h3>
+
+            <p class="card-tour__text">
+              Starts from <span class="card-tour__currency">$</span><span class="card-tour__price">400</span>
+            </p>
+
+            <div class="card-tour__rate">
+              <svg class="card-tour__rate-star" width="16" height="16" aria-hidden="true">
+                <use href="svg/sprite.svg#star-small"></use>
+              </svg>
+              <span class="visually-hidden">Rating:</span>(4.5)
+            </div>
+          </div>
+
+          <div class="header__img-block">
+            <div class="header__img-cover header__img-cover--top" aria-hidden="true"></div>
+            <div class="header__img-cover header__img-cover--bottom" aria-hidden="true"></div>
+
+            <picture>
+              <source srcset="img/sections/header/1.webp" media="(min-width: 580px)" type="image/webp">
+              <source srcset="img/sections/header/1.jpg" media="(min-width: 580px)">
+              <source srcset="img/sections/header/1--sm.webp"  type="image/webp">
+              <img src="img/sections/header/1--sm.jpg" alt="Smiling friends" class="header__img" width="1280" height="853">
+            </picture>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="partners">
+      <div class="container">
+        <div class="partners__inner">
+          <h2 class="partners__title">Our Travel Partner</h2>
+
+          <ul class="partners__list list-reset">
+            <li class="partners__list-item">
+              <a href="https://www.traveloka.com/" class="partners__list-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Traveloka">
+                <svg class="partners__list-logo" width="126" height="28" aria-hidden="true">
+                  <use href="svg/sprite.svg#partners--traveloka"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="partners__list-item">
+              <a href="https://www.airbnb.com/" class="partners__list-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Airbnb">
+                <svg class="partners__list-logo" width="90" height="28" aria-hidden="true">
+                  <use href="svg/sprite.svg#partners--airbnb"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="partners__list-item">
+              <a href="https://www.expedia.com/" class="partners__list-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Expedia">
+                <svg class="partners__list-logo" width="141" height="40" aria-hidden="true">
+                  <use href="svg/sprite.svg#partners--expedia"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="partners__list-item">
+              <a href="https://skyscanner.net/" class="partners__list-link" target="_blank" rel="noopener noreferrer" aria-label="Visit SkyScanner">
+                <svg class="partners__list-logo" width="155" height="28" aria-hidden="true">
+                  <use href="svg/sprite.svg#partners--skyscanner"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="partners__list-item">
+              <a href="https://www.aa.com/homePage.do" class="partners__list-link" target="_blank" rel="noopener noreferrer" aria-label="Visit American Airlines">
+                <svg class="partners__list-logo" width="153" height="40" aria-hidden="true">
+                  <use href="svg/sprite.svg#partners--american-airlines"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="destinations">
+      <div class="container">
+        <header class="destinations__header">
+          <h2 class="destinations__heading heading heading--2">Popular Destinations</h2>
+          <p class="text text--md">See our popular destinations that our client choose</p>
+        </header>
+
+        <div class="destinations-slider splide" role="group" aria-label="Destinations slider">
+          <div class="destinations-slider__buttons splide__arrows">
+            <button class="destinations-slider__btn splide__arrow splide__arrow--prev btn btn--icon btn--outlined btn--rounded">
+              <svg class="btn__icon">
+                <use href="svg/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+  
+            <button class="destinations-slider__btn splide__arrow splide__arrow--next btn btn--icon btn--outlined btn--rounded">
+              <svg class="btn__icon btn__icon--reversed">
+                <use href="svg/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+          </div>
+          
+    
+          
+            <div class="destinations-slider__track splide__track">
+              <ul class="splide__list list-reset">
+                <li class="destinations-slider__slide splide__slide card-tour card-tour--vertical">
+                  <div class="card-tour__img-block">
+                    <picture>
+                      <source srcset="img/locations/venice.webp" type="image/webp">
+                      <img src="img/locations/venice.jpg" alt="Venice canal" class="card-tour__img" width="304" height="304">
+                    </picture>
+                  </div>
+
+                  <h3 class="card-tour__title heading">
+                    <a class="card-tour__title-link" href="#">Venice, Italy</a>
+                  </h3>
+
+                  <p class="card-tour__text">
+                    Starts from <span class="card-tour__currency">$</span><span class="card-tour__price">900</span>
+                  </p>
+
+                  <div class="card-tour__rate">
+                    <svg class="card-tour__rate-star" width="16" height="16" aria-hidden="true">
+                      <use href="svg/sprite.svg#star-small"></use>
+                    </svg>
+                    <span class="visually-hidden">Rating:</span>(4.5)
+                  </div>
+                </li>
+
+                <li class="destinations-slider__slide splide__slide card-tour card-tour--vertical">
+                  <div class="card-tour__img-block">
+                    <picture>
+                      <source srcset="img/locations/bali.webp" type="image/webp">
+                      <img src="img/locations/bali.jpg" alt="Girl near the ocean in Bali" class="card-tour__img" width="304" height="304">
+                    </picture>
+                  </div>
+
+                  <h3 class="card-tour__title heading">
+                    <a class="card-tour__title-link" href="#">Bali, Indonesia</a>
+                  </h3>
+
+                  <p class="card-tour__text">
+                    Starts from <span class="card-tour__currency">$</span><span class="card-tour__price">480</span>
+                  </p>
+
+                  <div class="card-tour__rate">
+                    <svg class="card-tour__rate-star" width="16" height="16" aria-hidden="true">
+                      <use href="svg/sprite.svg#star-small"></use>
+                    </svg>
+                    <span class="visually-hidden">Rating:</span>(4.5)
+                  </div>
+                </li>
+
+                <li class="destinations-slider__slide splide__slide card-tour card-tour--vertical">
+                  <div class="card-tour__img-block">
+                    <picture>
+                      <source srcset="img/locations/bangkok.webp" type="image/webp">
+                      <img src="img/locations/bangkok.jpg" alt="Thai monument" class="card-tour__img" width="304" height="304">
+                    </picture>
+                  </div>
+
+                  <h3 class="card-tour__title heading">
+                    <a class="card-tour__title-link" href="#">Bangkok, Thailand</a>
+                  </h3>
+
+                  <p class="card-tour__text">
+                    Starts from <span class="card-tour__currency">$</span><span class="card-tour__price">440</span>
+                  </p>
+
+                  <div class="card-tour__rate">
+                    <svg class="card-tour__rate-star" width="16" height="16" aria-hidden="true">
+                      <use href="svg/sprite.svg#star-small"></use>
+                    </svg>
+                    <span class="visually-hidden">Rating:</span>(4.5)
+                  </div>
+                </li>
+
+                <li class="destinations-slider__slide splide__slide card-tour card-tour--vertical">
+                  <div class="card-tour__img-block">
+                    <picture>
+                      <source srcset="img/locations/santorini.webp" type="image/webp">
+                      <img src="img/locations/santorini.jpg" alt="White houses in Santorini" class="card-tour__img" width="304" height="304">
+                    </picture>
+                  </div>
+
+                  <h3 class="card-tour__title heading">
+                    <a class="card-tour__title-link" href="#">Santorini, Greek</a>
+                  </h3>
+
+                  <p class="card-tour__text">
+                    Starts from <span class="card-tour__currency">$</span><span class="card-tour__price">900</span>
+                  </p>
+
+                  <div class="card-tour__rate">
+                    <svg class="card-tour__rate-star" width="16" height="16" aria-hidden="true">
+                      <use href="svg/sprite.svg#star-small"></use>
+                    </svg>
+                    <span class="visually-hidden">Rating:</span>(4.5)
+                  </div>
+                </li>
+
+                <li class="destinations-slider__slide splide__slide card-tour card-tour--vertical">
+                  <div class="card-tour__img-block">
+                    <picture>
+                      <source srcset="img/locations/paris.webp" type="image/webp">
+                      <img src="img/locations/paris.jpg" alt="Eiffel Tower" class="card-tour__img" width="304" height="304">
+                    </picture>
+                  </div>
+
+                  <h3 class="card-tour__title heading">
+                    <a class="card-tour__title-link" href="#">Paris, France</a>
+                  </h3>
+
+                  <p class="card-tour__text">
+                    Starts from <span class="card-tour__currency">$</span><span class="card-tour__price">1100</span>
+                  </p>
+
+                  <div class="card-tour__rate">
+                    <svg class="card-tour__rate-star" width="16" height="16" aria-hidden="true">
+                      <use href="svg/sprite.svg#star-small"></use>
+                    </svg>
+                    <span class="visually-hidden">Rating:</span>(4.5)
+                  </div>
+                </li>
+
+                <li class="destinations-slider__slide splide__slide card-tour card-tour--vertical">
+                  <div class="card-tour__img-block">
+                    <picture>
+                      <source srcset="img/locations/new-york.webp" type="image/webp">
+                      <img src="img/locations/new-york.jpg" alt="The Statue of Liberty" class="card-tour__img" width="304" height="304">
+                    </picture>
+                  </div>
+
+                  <h3 class="card-tour__title heading">
+                    <a class="card-tour__title-link" href="#">New York, USA</a>
+                  </h3>
+
+                  <p class="card-tour__text">
+                    Starts from <span class="card-tour__currency">$</span><span class="card-tour__price">1800</span>
+                  </p>
+
+                  <div class="card-tour__rate">
+                    <svg class="card-tour__rate-star" width="16" height="16" aria-hidden="true">
+                      <use href="svg/sprite.svg#star-small"></use>
+                    </svg>
+                    <span class="visually-hidden">Rating:</span>(4.5)
+                  </div>
+                </li>
+
+                <li class="destinations-slider__slide splide__slide card-tour card-tour--vertical">
+                  <div class="card-tour__img-block">
+                    <picture>
+                      <source srcset="img/locations/dubai.webp" type="image/webp">
+                      <img src="img/locations/dubai.jpg" alt="Burj Al Arab" class="card-tour__img" width="304" height="304">
+                    </picture>
+                  </div>
+
+                  <h3 class="card-tour__title heading">
+                    <a class="card-tour__title-link" href="#">Dubai, UAE</a>
+                  </h3>
+
+                  <p class="card-tour__text">
+                    Starts from <span class="card-tour__currency">$</span><span class="card-tour__price">900</span>
+                  </p>
+
+                  <div class="card-tour__rate">
+                    <svg class="card-tour__rate-star" width="16" height="16" aria-hidden="true">
+                      <use href="svg/sprite.svg#star-small"></use>
+                    </svg>
+                    <span class="visually-hidden">Rating:</span>(4.5)
+                  </div>
+                </li>
+              </ul>
+            </div>
+        
+        </div>
+      </div>
+    </section>
+
+    <section class="advantages">
+      <div class="container">
+        <div class="advantages__inner">
+          <div class="advantages__content content">
+            <h2 class="content__heading content__heading--md heading">Embark on unforgettable journeys with our premium travel services</h2>
+
+            <p class="advantages__text content__text text text--md">Picture-perfect getaways are just a click away. Find your slice of paradise, whether it's a tropical island, a charming city, or an enchanting countryside retreat.</p>
+
+            <ol class="advantages__list list-reset">
+              <li class="advantages__list-item">
+                <h3 class="advantages__list-title heading">Best Choice</h3>
+                <p class="advantages__list-text">We always prioritize our customer comfort and satisfaction. That’s why we only accept the best hotel and destination</p>
+              </li>
+
+              <li class="advantages__list-item">
+                <h3 class="advantages__list-title heading">Competitive Prices</h3>
+                <p class="advantages__list-text">Altough the price tends to be cheaper but it will not affect the quality of service</p>
+              </li>
+
+              <li class="advantages__list-item">
+                <h3 class="advantages__list-title heading">Refund and Reschedule</h3>
+                <p class="advantages__list-text">Don’t worry if suddenly you have problem and want to reschule or refund, you can get fully.</p>
+              </li>
+            </ol>
+          </div>
+
+          <div class="advantages__gallery advantages-gallery">
+            <div class="advantages-gallery__card card-info">
+              <div class="card-info__avatars">
+                <img class="card-info__avatar avatar avatar--md avatar--rounded" src="img/avatars/random-1.jpg" alt="">
+                <img class="card-info__avatar avatar avatar--md avatar--rounded" src="img/avatars/random-2.jpg" alt="">
+                <img class="card-info__avatar avatar avatar--md avatar--rounded" src="img/avatars/random-3.jpg" alt="">
+              </div>
+
+              <p class="card-info__text">
+                <span class="card-info__accent-text">10K+</span> Satisfied Customer
+              </p>
+            </div>
+
+            <picture class="advantages-gallery__img-block advantages-gallery__img-block--lg">
+              <source srcset="img/sections/journey/1.webp" type="image/webp">
+              <img class="advantages-gallery__img" src="img/sections/journey/1.jpg" alt="Flying seagulls over the coast">
+            </picture>
+
+            <picture class="advantages-gallery__img-block advantages-gallery__img-block--md">
+              <source srcset="img/sections/journey/2.webp" type="image/webp">
+              <img class="advantages-gallery__img" src="img/sections/journey/2.jpg" alt="Eiffel Tower in Paris">
+            </picture>
+
+            <picture class="advantages-gallery__img-block advantages-gallery__img-block--md">
+              <source srcset="img/sections/journey/3.webp" type="image/webp">
+              <img class="advantages-gallery__img" src="img/sections/journey/3.jpg" alt="St. Peter's Square in Rome">
+            </picture>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="explore">
+      <div class="container">
+        <div class="explore__inner">
+          <div class="explore__img-block">
+            <picture>
+              <source srcset="img/sections/explore/1.webp" type="image/webp">
+              <img class="explore__img" src="img/sections/explore/1.jpg" alt="Wooden boat on the river among the rocks">
+            </picture>
+
+            <div class="explore__card-tour card-tour card-tour--horizontal card-tour--sm">
+              <img src="img/hotels/heaven-resort.jpg" alt="" class="card-tour__img">
+  
+              <h3 class="card-tour__title heading">
+                 <a class="card-tour__title-link" href="https://www.instagram.com/cocodeheaven/">Heaven Resort</a>
+              </h3>
+  
+              <p class="card-tour__text">
+                Starts from <span class="card-tour__currency">$</span><span class="card-tour__price">450</span>
+              </p>
+  
+              <div class="card-tour__rate">
+                <svg class="card-tour__rate-star" width="16" height="16" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+                <span class="visually-hidden">Rating:</span>(4.5)
+              </div>
+            </div>
+
+            <div class="explore__card-user card-user">
+              <img class="avatar avatar--md avatar--rounded" src="img/avatars/jake-anderson.jpg" alt="">
+
+              <div class="card-user__info">
+                <a class="card-user__name" href="#">Jake Anderson</a>
+                <p class="card-user__vocation">Best tour guide</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="explore__content content">
+            <h2 class="content__heading content__heading--md heading">With our service We Will Explore Something Different</h2>
+
+            <p class="explore__text content__text text text--md">Uncover hidden gems and immerse yourself in vibrant cultures. From breathtaking landscapes to awe-inspiring destinations, let us guide you to the most extraordinary places on the planet.</p>
+
+            <a class="explore__btn btn btn--accent btn--rounded-sm" href="#">Explore more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="comments">
+      <div class="container comments__container">
+        <div class="comments__inner">
+          <div class="comments__column">
+            <article class="comment">
+              <div class="comment__rate star-rate" style="--rating: 5;">
+                <p class="visually-hidden">Rating of this product is 5 out of 5</p>
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <div class="star-rate__overlay"></div>
+              </div>
+  
+              <p class="comment__text">"An outstanding resource for travel enthusiasts! The website's destination reviews and travel advice were spot-on. I now trust their recommendations for all my trips.."</p>
+  
+              <div class="comment__user">
+                <img class="avatar avatar--lg avatar--rounded" src="img/avatars/hendra-paru-paru.jpg" alt="">
+  
+                <div class="comment__user-data">
+                  <a class="comment__user-name" href="#">Hendra Paru Paru</a>
+                  <p class="comment__user-vocation">Travel Enthusiast</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="comment">
+              <div class="comment__rate star-rate" style="--rating: 5;">
+                <p class="visually-hidden">Rating of this product is 5 out of 5</p>
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <div class="star-rate__overlay"></div>
+              </div>
+  
+              <p class="comment__text">"I had a seamless booking process with this travel website. Their website was easy to navigate, and I got fantastic deals on flights and accommodation. Will definitely use them for future trips."</p>
+  
+              <div class="comment__user">
+                <img class="avatar avatar--lg avatar--rounded" src="img/avatars/akbar-cenglu.jpg" alt="">
+  
+                <div class="comment__user-data">
+                  <a class="comment__user-name" href="#">Akbar Cenglu</a>
+                  <p class="comment__user-vocation">Travel Enthusiast</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="comment">
+              <div class="comment__rate star-rate" style="--rating: 4;">
+                <p class="visually-hidden">Rating of this product is 4 out of 5</p>
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <div class="star-rate__overlay"></div>
+              </div>
+  
+              <p class="comment__text">"The detailed travel guides provided by this website were invaluable during our journey. We felt confident exploring a new destination, thanks to their helpful tips and insights. erat."</p>
+  
+              <div class="comment__user">
+                <img class="avatar avatar--lg avatar--rounded" src="img/avatars/jake-paul.jpg" alt="">
+  
+                <div class="comment__user-data">
+                  <a class="comment__user-name" href="#">Jake Paul</a>
+                  <p class="comment__user-vocation">Travel Enthusiast</p>
+                </div>
+              </div>
+            </article>
+          </div>
+          
+          <div class="comments__column">
+            <article class="comment">
+              <div class="comment__rate star-rate" style="--rating: 5;">
+                <p class="visually-hidden">Rating of this product is 5 out of 5</p>
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <div class="star-rate__overlay"></div>
+              </div>
+  
+              <p class="comment__text">"Amazing experience! The travel website made booking our vacation a breeze. Everything was well-organized, and we had a fantastic time exploring new places. Highly recommend!"</p>
+  
+              <div class="comment__user">
+                <img class="avatar avatar--lg avatar--rounded" src="img/avatars/nichole-edward.jpg" alt="">
+  
+                <div class="comment__user-data">
+                  <a class="comment__user-name" href="#">Nichole Edward</a>
+                  <p class="comment__user-vocation">Travel Enthusiast</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="comment">
+              <div class="comment__rate star-rate" style="--rating: 4;">
+                <p class="visually-hidden">Rating of this product is 4 out of 5</p>
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <div class="star-rate__overlay"></div>
+              </div>
+  
+              <p class="comment__text">"The travel website's customer service is top-notch! They were quick to respond to my queries and helped me plan a dream vacation. It was an excellent experience from start to finish."</p>
+  
+              <div class="comment__user">
+                <img class="avatar avatar--lg avatar--rounded" src="img/avatars/jennice-ong.jpg" alt="">
+  
+                <div class="comment__user-data">
+                  <a class="comment__user-name" href="#">Jennice Ong</a>
+                  <p class="comment__user-vocation">Travel Enthusiast</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="comment">
+              <div class="comment__rate star-rate" style="--rating: 5;">
+                <p class="visually-hidden">Rating of this product is 5 out of 5</p>
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <div class="star-rate__overlay"></div>
+              </div>
+  
+              <p class="comment__text">"Hands down the best travel website I've ever used! The user interface was so intuitive, and I was able to book my dream vacation effortlessly. erat."</p>
+  
+              <div class="comment__user">
+                <img class="avatar avatar--lg avatar--rounded" src="img/avatars/jennice-ong.jpg" alt="">
+  
+                <div class="comment__user-data">
+                  <a class="comment__user-name" href="#">Jennice Ong</a>
+                  <p class="comment__user-vocation">Travel Enthusiast</p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          
+
+          <div class="comments__column">
+            <article class="comment">
+              <div class="comment__rate star-rate" style="--rating: 5;">
+                <p class="visually-hidden">Rating of this product is 5 out of 5</p>
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <div class="star-rate__overlay"></div>
+              </div>
+  
+              <p class="comment__text">"Lorem ipsum dolor sit amet, Efficient and reliable! The travel website helped me find the best travel deals, and their user-friendly interface made the booking process a breeze."</p>
+  
+              <div class="comment__user">
+                <img class="avatar avatar--lg avatar--rounded" src="img/avatars/jonathan-r.jpg" alt="">
+  
+                <div class="comment__user-data">
+                  <a class="comment__user-name" href="#">Jonathan R.</a>
+                  <p class="comment__user-vocation">Travel Enthusiast</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="comment">
+              <div class="comment__rate star-rate" style="--rating: 4;">
+                <p class="visually-hidden">Rating of this product is 4 out of 5</p>
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <div class="star-rate__overlay"></div>
+              </div>
+  
+              <p class="comment__text">"I loved the personalized itinerary feature of this travel website. It allowed me to plan my trip according to my preferences, making it a truly customized experience."</p>
+  
+              <div class="comment__user">
+                <img class="avatar avatar--lg avatar--rounded" src="img/avatars/angela-cole.jpg" alt="">
+  
+                <div class="comment__user-data">
+                  <a class="comment__user-name" href="#">Angela Cole</a>
+                  <p class="comment__user-vocation">Travel Enthusiast</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="comment">
+              <div class="comment__rate star-rate" style="--rating: 5;">
+                <p class="visually-hidden">Rating of this product is 5 out of 5</p>
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <svg class="star-rate__icon" width="21" height="22" aria-hidden="true">
+                  <use href="svg/sprite.svg#star-small"></use>
+                </svg>
+
+                <div class="star-rate__overlay"></div>
+              </div>
+  
+              <p class="comment__text">"A one-stop-shop for all things travel! The website's variety of travel options and user reviews helped me make informed decisions and ensured a smooth trip."</p>
+  
+              <div class="comment__user">
+                <img class="avatar avatar--lg avatar--rounded" src="img/avatars/bambang-susilo.jpg" alt="">
+  
+                <div class="comment__user-data">
+                  <a class="comment__user-name" href="#">Bambang Susilo</a>
+                  <p class="comment__user-vocation">Travel Enthusiast</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="newsletter">
+      <div class="newsletter__container container">
+        <svg class="newsletter__pointer-icon" width="236" height="273" aria-hidden="true">
+          <use href="svg/sprite.svg#pointer"></use>
+        </svg>
+
+        <div class="newsletter__inner">
+          <div class="newsletter__content">
+            <h2 class="newsletter__heading">Join our newsletter to stay up to date</h2>
+            <p class="newsletter__text">Stay connected with our brand</p>
+          </div>
+
+          <form action="#" class="newsletter__form newsletter-form">
+            <input type="email" class="newsletter-form__input input" placeholder="Enter your email" name="mail">
+            <button class="newsletter-form__btn btn btn--primary btn--rounded-sm">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__content">
+          <svg class="footer__logo logo logo--md">
+            <use href="svg/sprite.svg#logo"></use>
+          </svg>
+
+          <p class="footer__text">Wanderlust meets wander well – Experience seamless travel with our services.</p>
+        </div>
+
+        <div class="footer__links">
+          <div class="footer__links-column">
+            <h3 class="footer__links-title">Company</h3>
+
+            <ul class="footer__links-menu list-reset">
+              <li class="footer__links-menu-item">
+                <a href="#" class="footer__links-menu-link">About us</a>
+              </li>
+
+              <li class="footer__links-menu-item">
+                <a href="#" class="footer__links-menu-link">Blog</a>
+              </li>
+
+              <li class="footer__links-menu-item">
+                <a href="#" class="footer__links-menu-link">Customers</a>
+              </li>
+
+              <li class="footer__links-menu-item">
+                <a href="#" class="footer__links-menu-link">Packages</a>
+              </li>
+
+              <li class="footer__links-menu-item">
+                <a href="#" class="footer__links-menu-link">Community</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__links-column">
+            <h3 class="footer__links-title">Help</h3>
+
+            <ul class="footer__links-menu list-reset">
+              <li class="footer__links-menu-item">
+                <a href="#" class="footer__links-menu-link">Support</a>
+              </li>
+
+              <li class="footer__links-menu-item">
+                <a href="#" class="footer__links-menu-link">FAQs</a>
+              </li>
+
+              <li class="footer__links-menu-item">
+                <a href="#" class="footer__links-menu-link">Refund policy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/index.bundle.js"></script>
+
+</body>
+</html>
